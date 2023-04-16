@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Website Title -->
+    <title>accueil</title>
+    <link rel="icon" type="image/jpg" href="/images/favicon.ico">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{% static 'accueil/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'accueil/css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'accueil/css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'accueil/css/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'accueil/css/styles.css' %}" rel="stylesheet"> 
+    <style>
+    .loader span {
+	        color : black;
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            animation: blur 3s linear infinite;
+            line-height: 20px;
+            transition: all 0.5s;
+            letter-spacing: 0.2em;
+    }
+    @keyframes blur {
+    0%, 90% {
+	filter: blur(0);
+   }
+  
+   50% {
+	filter: blur(10px);
+   }
+  }
+</style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+       <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="{% url 'accueil' %}"><img src="{% static 'accueil/images/logo_2.jfif' %}" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <p class="home-title"><h1><span class="turquoise">Bonjour dans le site </span> De bibliotheque pour books</h1></p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'accueil/images/header-teamwork.svg' %}" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2><div class="loader">
+                        <span>B</span><span>O</span><span>N</span><span>J</span><span>O</span><span>U</span><span>R </span> 
+                        <span>D</span><span>A</span><span>N</span><span>S</span> 
+                        <span>N</span><span>O</span><span>T</span><span>R</span><span>E</span> 
+                        <span>E</span><span>S</span><span>P</span><span>A</span><span>C</span><span>E</span> 
+                      </div></h2>
+                </div> <!-- end of col -->
+            
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+
+
+    <!-- Details 1 -->
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Espace Etudiant</h2>
+                        <p>Espace de L'etudiant</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">En savoir plus</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'accueil/images/details-1-office-worker.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+    
+    <!-- Details 2 -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'accueil/images/details-2-office-team-work.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Administrateur</h2>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body">Espace de L'Administrateur</div>
+                            </li>
+                            
+                        </ul>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">En savoir plus</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 2 -->
+
+
+    <!-- Details 1 -->
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Ensignient</h2>
+                        <p>Espace de L'ensignient</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">En savoir plus</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">  
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'accueil/images/testimonials-2-men-talking.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'accueil/images/details-lightbox-1.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Espace etudiant</h3>
+                    <hr>
+                    <h5>Caracterstiques</h5>
+                    <p>cette espase permet l'etudiant de faire plusieurs choix pour les loger les books</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Choisir les books</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Choisir le autor</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Voir les sujets convenable</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body"></div>
+                        </li>
+                        </li>
+                    </ul>
+                    <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                    <a class="btn-outline-reg mfp-close as-button" href="{% url 'login' %}">login</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 1 -->
+
+    <!-- Details Lightbox 2 -->
+	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'accueil/images/details-lightbox-2.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Espace Administrateur</h3>
+                    <hr>
+                    <h5>Caracterstiques</h5>
+                    <p>L'Administrateur permet de faire les choix suivant</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">collecte des book proposés par les enseignants </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Vérifie la satisfaction des conditions nécessaire pour l’attribution des books aux étudiants </div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Organise la formation et l’affichage des facture</div>
+                        </li>
+                    </ul>
+                    <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                    <a class="btn-outline-reg mfp-close as-button" href="admin/">login</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 2 -->
+    <!-- end of details lightboxes -->
+
+  
+
+ 
+
+   <!-- Details Lightbox 3 -->
+	<div id="details-lightbox-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'accueil/images/details-lightbox-1.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Espace d'Ensignient </h3>
+                    <hr>
+                    <h5>Caracterstiques</h5>
+                    <p>l'ensignient permet de faire des choix</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Peut proposer un ou plusieurs sujets avec un petit descriptif</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Peut préciser les modules prérequis pour choisir le projet.</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Peut consulter pour voir l’affectation des books ;</div>
+                        </li>
+                        </li>
+                    </ul>
+                    <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                    <a class="btn-outline-reg mfp-close as-button" href="{% url 'signin' %}">login</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 1 -->
+
+    
+
+   
+
+    
+    
+   
+    
+    
+    	
+    <!-- Scripts-->
+    <script src="{% static 'accueil/js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins --->  
+    <script src="{% static 'accueil/js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->  
+    <script src="{% static 'accueil/js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->  
+    <script src="{% static 'accueil/js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->  
+    <script src="{% static 'accueil/js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->  
+    <script src="{% static 'accueil/js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->  
+    <script src="{% static 'accueil/js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->  
+    <script src="{% static 'accueil/js/scripts.js' %}"></script> <!-- Custom scripts -->  
+</body>
+</html>

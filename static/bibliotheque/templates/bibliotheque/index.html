@@ -1,0 +1,43 @@
+<!--{% extends "layouts/master.html" %}
+
+{% block body %}
+<div class="rows my-5">
+    
+    <div class="col-md-12 text-center">
+        <h4>{{ title }}({{books|length}}) book{{books|pluralize}}</h4>
+        
+        {% if books %}
+        
+         
+        <div class="row">
+            {% for book in books%}
+            <div class="col-md-4 my-3" >
+                <div class="card">
+                    <a href="/bibliotheque/{{ book.id }}">
+                        <img class="card-img-top" height="400px" width="100px" object-fit="cover"  src="{{ book.image }}" alt="">
+
+                    </a>
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">{{book.title|upper}}</h4>
+                        <h5 class="card-text ">{{book.autor|upper}}</h5>
+                        <p class="card-text">{{book.body|truncatewords:45}}</p>
+                        <button class="btn btn-success" > price : DH{{book.price|default:"free"}}
+                    </div>
+                </div>
+               
+            </div>
+            {% endfor %}
+        </div>
+
+
+        
+        {% else %}
+        <p style="color:red;"> No books</p>
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}
+-->

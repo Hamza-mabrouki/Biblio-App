@@ -1,0 +1,19 @@
+{% extends "layouts/master.html" %}
+
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-md">
+            
+            <h1>{{ book.title }}</h1>
+            <p>
+                {{ book.body }}
+            </p>
+            <h2>{{book.exemplaire}}</h2>
+            <h2>{{book.tag}}</h2>
+        </div>
+    </div>
+
+{% endblock %}
+
